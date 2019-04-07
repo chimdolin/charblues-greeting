@@ -12,7 +12,7 @@ export class ContactUs extends Component {
                 <section>
                     <div className='container'>
                         <h1>
-                        😎 Contact Us
+                        🤝 Contact Us
                     </h1>
                         <hr />
                         <div className='contact-list'>

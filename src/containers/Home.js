@@ -11,18 +11,23 @@ export class Home extends Component {
                 <Slide />
                 <section>
                     <div className='container'>
-                            <h1>
-                            🤝 Greeting
+                        <h1>
+                            🎉 Greeting
                            </h1>
-                           <hr />
+                        <hr />
 
-                           <div className='greeting-box'>
-                                <div className='greeting-form'>
-                                    <div className='greeting-msg'>
-                                    🚨🚨🚨<br />-- greeting system  --<br /> coming soon!
+                        <div className='greeting-box'>
+                            <div className='greeting-form'>
+                                <input id='greet-txt' type='text' />
+                                <button className='btn'>Submit</button>
+                            </div>
+                            <div className='greeting-msg'>
+                                🚨🚨🚨<br />-- greeting system  --<br /> coming soon!
                                     </div>
-                                </div>
-                           </div>
+                            <div className='greeting-more'>
+                                <a className='btn'> More.. </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <Footer />

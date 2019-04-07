@@ -17,7 +17,7 @@ export class Header extends Component {
                             <Link to='/schedule'>SCHEDULE</Link>
                         </li>
                         <li>
-                            <a href='https://www.facebook.com/macrowave.th/photos/pcb.1109874029214454/1109867559215101/?type=3&theater' target='_blank'>SHOP</a>
+                        <Link to='/store'>STORE</Link>
                         </li>
                         <li>
                             <Link to='/contactus'>CONTACT US</Link>

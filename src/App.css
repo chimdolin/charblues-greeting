@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 
 html {
-  background-color: blue;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   font-family: "Roboto", sans-serif;
 }
 
 nav {
-  padding: 0.25rem;
-  background-color: blue;
+  background-color: transparent;
   width: 60%;
   margin: 0 auto;
 }
@@ -15,8 +14,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: center;
-  padding-right: 50px;
+  justify-content: space-around;
 }
 
 nav ul li a {
@@ -25,11 +23,13 @@ nav ul li a {
   font-size: 1.25rem;
   font-weight: 300;
   padding: 2em;
-  text-transform: lowercase;
+  text-transform: uppercase;
+  transition: .3s;
 }
 
 nav ul li a:hover {
-  text-transform: uppercase;
+  transition: .3s;
+  color: #30cfd0;
 }
 
 .slide {
@@ -39,6 +39,7 @@ nav ul li a:hover {
   text-align: center;
   font-weight: 300;
   height: 400px;
+  cursor: url('./images/guitar.png'), auto;	
 }
 
 .fans-box {
@@ -105,16 +106,55 @@ section {
 }
 
 .greeting-box {
+  width: 100%;
   margin-top: 3rem;
-  border: 1px solid blue;
+}
+
+.greeting-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.greeting-form input[type=text] {
+  width: 100px;
+  outline: none;
+  border: 0;
+  border-bottom: #330867 1px solid;
+  font-size: 16px;
+  color: #330867;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+.greeting-form input[type=text]:focus {
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+
+  width: 100%;
+}
+
+.greeting-form .btn {
+  display: flex;
+
+}
+
+.greeting-msg {
+  border: 1px solid #330867;
   border-radius: 3px;
   height: 200px;
   text-align: center;
-  padding-top: 7rem;
 }
 
+.greeting-more {
+  margin-top: 1rem;
+}
+
+
+
 hr {
-  border: 1px solid blue;
+  border: 1px solid #330867;
 }
 
 .schedule-list {
@@ -122,9 +162,78 @@ hr {
   margin-top: 3rem;
 }
 
+.store-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.store-list-item {
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem;
+  width: 200px;
+  border-top: #330867 solid 5px;
+}
+
+.store-list-item img {
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.store-list-item p {
+  font-weight: 300;
+  text-align: justify;
+  color: #330867;
+}
+
+.btn {
+  display: block;
+  background-color: #330867;
+  border-radius: 3px;
+  padding: .5rem;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.disable {
+  color: rgb(226, 190, 190);
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+iframe .itune-player {
+  margin-top: 3rem;
+}
+
+.itune-player {
+  width:100%;
+  overflow:hidden;
+  background:transparent;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cols {
+  padding: 1rem;
+}
+
+.footer {
+  padding: 2rem;
+}
+
 footer {
-  padding: 0.25rem;
-  background-color: blue;
+  background-color: #330867;
   width: 60%;
   margin: 0 auto;
   color: #fff;
@@ -133,14 +242,22 @@ footer {
   font-weight: 700;
 }
 
+footer .row .cols ul{
+  text-align: left;
+}
+
+footer .row .cols ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .not-found {
   font-size: 50px;
   font-weight: 300;
 }
 
-iframe {
-  margin-top: 3rem;
-}
+
+
 
 @media (max-width: 600px) {
   nav {
@@ -223,17 +340,7 @@ iframe {
   .container {
     padding: 2rem;
   }
-  
-  .greeting-box {
-    margin-top: 3rem;
-    border: 1px solid blue;
-    border-radius: 3px;
-    height: 200px;
-  }
-  
-  hr {
-    border: 1px solid blue;
-  }
+
   
   .schedule-list {
     text-align: center;
@@ -242,7 +349,7 @@ iframe {
   
   footer {
     padding: 0.25rem;
-    background-color: blue;
+    background-color: transparent;
     width: 60%;
     margin: 0 auto;
     color: #fff;
