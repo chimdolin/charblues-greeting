@@ -24,14 +24,14 @@ export class ContactUs extends Component {
                                     🔗 <a href='https://www.facebook.com/macrowave.th/' >fb.com/macrowave.th</a>
                                 </p>
                             </div>
-                            <div className='profile'>
+                            {/* <div className='profile'>
                                 <img className='img-profile-themuh' />
                                 <p>
                                     <b>BAND MANEAGER</b> <br />
                                     👱 Mr. T'Moo (the cLock) <br />
                                     ☎️ 086-645-8367
                     </p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>

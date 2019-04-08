@@ -6,7 +6,6 @@ export class Slide extends Component {
             <div>
                 <div className='slide'>
                     <img className='img-responsive' />
-
                 </div>
             </div>
         )

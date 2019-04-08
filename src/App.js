@@ -8,7 +8,22 @@ import Store from './containers/Store';
 import ContactUs from './containers/ContactUs';
 import NotFound from './containers/error/NotFound';
 
+import firebase from 'firebase'
+
 class App extends Component {
+
+  constructor(props){
+    super(props)
+    const config = {
+      apiKey: "AIzaSyAqHq6Te5semF3HTqDZtc5fNv6sRPr5FD0",
+      authDomain: "charblues-greeting.firebaseapp.com",
+      databaseURL: "https://charblues-greeting.firebaseio.com",
+      projectId: "charblues-greeting",
+      storageBucket: "charblues-greeting.appspot.com",
+      messagingSenderId: "731983892035"
+    };
+    firebase.initializeApp(config)
+  }
 
   renderRouter() {
     return (
